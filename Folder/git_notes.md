@@ -27,10 +27,11 @@
    - if no staged_changes =0 -> edit commit's message only
    - **--no-edit** flag -> amend commits without changing its commit message. 
   
-  #### Changing older or multiple commits->
+  #### Changing more older commits ->
 
-  ##### git rebase ->
-  - -i 
+   ##### git rebase ->
+     - `git rebase --interactive commit_hash^` (^ => to include that commit also) => `edit`: to make more changes and amend it => `git rebase --continue`.
+     => `reword` : to change only commit message.
 
 
 #### Extra Points->
