@@ -16,7 +16,7 @@
     * For working on every new feature , bug etc -> make new branch for it .
     * Do not directly commit in master branch
 ### 1 Branch allows only 1 pull requests -> then after commits will added into it.
- *  ## **For working on different fetures -> create seperate branches for it -> create sepearte pull requests related to it.**  
+ *  ## **For working on different fetures -> create seperate branches for it => create sepearte pull requests related to it.**  
 
 * eval $(ssh-agent)
 * ssh-add ~/.ssh/id_ed25519
@@ -32,3 +32,7 @@
   ##### git rebase ->
   - -i 
 
+
+#### Extra Points->
+* git add -p => for more informative while also staging changes
+* git show commit_hash => show the changes
