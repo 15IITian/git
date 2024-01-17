@@ -41,6 +41,7 @@
      - ![Alt text](image-10.png)
      - (^ => to include that commit also) => `edit`: to make more changes and amend it => `git rebase --continue`.
      => `reword` : to change only commit message.
+     => `squash`: to combine two commits into one
 
 
 #### Extra Points->
@@ -90,4 +91,17 @@
 #### Comparing two branches ->
 ![Alt text](image-9.png)
 
-- commits which are not in main but in feature/uploader
+- commits which are not in main but in feature/uploader 
+
+
+### Cherry-Pick ->
+![Alt text](image-11.png)
+
+- helps to move a specific commit from one branch to another
+- First go to branch where you want commit to move into ->  `git cherry-pick commit_hash`
+- **into the head**
+
+### Reflog->
+- journal of all git actions
+  
+![Alt text](image-12.png)
