@@ -24,7 +24,7 @@
 ## Rewritting history ->
  #### git commit --amend -> 
 
- <!-- hello -->
+ 
    - to make changes in the latest commit -> commit + staged_changes = new commit 
    - if no staged_changes =0 -> edit commit's message only
    - **--no-edit** flag -> amend commits without changing its commit message. 
@@ -32,7 +32,14 @@
   #### Changing more older commits ->
 
    ##### git rebase ->
-     - `git rebase --interactive commit_hash^` (^ => to include that commit also) => `edit`: to make more changes and amend it => `git rebase --continue`.
+
+     - `git rebase` ->
+   ![Alt text](image-8.png)
+
+   all the changes of the feature/uploader will be on top of the main branch
+     - `git rebase --interactive commit_hash^` 
+     - ![Alt text](image-10.png)
+     - (^ => to include that commit also) => `edit`: to make more changes and amend it => `git rebase --continue`.
      => `reword` : to change only commit message.
 
 
@@ -79,3 +86,8 @@
 
 #### deleting a branch in remote ->
  `git push origin -delete branch_name`
+
+#### Comparing two branches ->
+![Alt text](image-9.png)
+
+- commits which are not in main but in feature/uploader
