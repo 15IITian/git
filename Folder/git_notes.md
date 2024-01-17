@@ -35,5 +35,7 @@
 
 
 #### Extra Points->
-* git add -p => for more informative while also staging changes
+* git add -p => helps to add changes to staging area patch wise.
 * git show commit_hash => show the changes
+
+
